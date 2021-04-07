@@ -38,7 +38,7 @@ public class Day2Question4 {
 		int[] abc=asending(arr,n);
 		
 		System.out.print("[ ");
-		for (int i = 0; i < n - 1; i++) {
+		for (int i = 0; i < n ; i++) {
 			System.out.print(abc[i]+" ");
 		}
 		System.out.print("]");
