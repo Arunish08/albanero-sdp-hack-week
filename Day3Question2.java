@@ -15,7 +15,7 @@ public class Day3Question2 {
 		}
 		int[] arr = l1.stream().mapToInt(i->i).toArray();
 		int temp;
-		for(int i=1;i<a;i=i=i+2)
+		for(int i=1;i<a;i=i+2)
 		{
 			temp=arr[i-1];
 			arr[i-1]=arr[i];
