@@ -9,9 +9,11 @@ public class DepthofParantheses {
 		str=s.nextLine();
 		if(str.length()>100) {
 			System.err.println("string length should be less than 100");
+			System.exit(1);
 		}
 		if(!str.matches("['[0-9]','+','-','*','/','(',')']+")) {
 			System.err.println(" ERROR ");
+			System.exit(1);
 		}
 		int n=0,count=0;
 		int len=str.length();
@@ -27,13 +29,13 @@ public class DepthofParantheses {
 					count--;
 				}
 				else {
-					System.err.println(" NOT VPS");
+					System.out.println(" NOT VPS");
 					System.exit(1);
 				}
 			}
 		}
 		if(count!=0) {
-			System.err.println(" NOT VPS");
+			System.out.println(" NOT VPS");
 			System.exit(1);
 		}
 		
